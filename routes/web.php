@@ -17,3 +17,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [DataController::class,'Data']);
 
 Route::get('/Blog',[DataController::class,'BlogData']);
+
+Route::get('/News',[DataController::class,'NewsData']);
