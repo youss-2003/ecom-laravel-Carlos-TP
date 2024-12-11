@@ -409,3 +409,4 @@ class DataController extends Controller
         return view('news', compact('blogs'));
     }
 }
+
