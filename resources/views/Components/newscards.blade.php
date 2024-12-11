@@ -10,15 +10,15 @@
 						<span class="flex-shrink-0 w-2 h-2 uppercase rounded-full bg-violet-600"></span>
 						<span class="text-xs font-bold tracking-wider uppercase">{{$blog['author']}}</span>
 					</h3>
-					<a rel="noopener noreferrer" href="#" class="font-serif hover:underline">{{$blog['title']}}</a>
+					<a rel="noopener noreferrer" href="#" class=" hover:underline">{{$blog['title']}}</a>
 					<p class="text-xs text-gray-600">{{$blog['published_at']}} by
 						<a rel="noopener noreferrer" href="#" class="hover:underline text-violet-600">{{$blog['author']}}</a>
 					</p>
 				</div>
             @endif
-            
+
             @endforeach
-				
+
 			</div>
 			<div class="flex flex-col w-full space-y-2">
 				<div class="flex w-full h-1  bg-violet-600">
@@ -37,7 +37,7 @@
 		@foreach ($blogs as $blog )
         @if ($blog['poster'])
         <div class="relative flex col-span-12  bg-center bg-no-repeat bg-cover xl:col-span-6 lg:col-span-5 md:col-span-9 min-h-96  " style="background-image: url('{{ $blog['img'] }}');">
-		<div class="absolute inset-0 bg-black opacity-50"></div>	
+		<div class="absolute inset-0 bg-black opacity-50"></div>
         <span class="absolute px-1 pb-2 text-xs font-bold uppercase border-b-2 left-6 top-6 text-gray-100 border-violet-600">usa,washingthon dc</span>
 			<a class="flex flex-col items-center justify-end p-6 text-center sm:p-8 group via- flex-grow-1 " href="/News">
 				<span class="flex items-center mb-4 space-x-2 text-violet-600">
@@ -46,12 +46,12 @@
 					</span>
 					<span class="text-sm font-bold text-red-600 z-50">Live</span>
 				</span>
-				<h1 rel="noopener noreferrer" href="#" class="font-serif text-2xl font-semibold group-hover:underline text-white z-50">{{$blog['content']}}</h1>
+				<h1 rel="noopener noreferrer" href="#" class=" text-2xl  group-hover:underline text-white z-50">{{$blog['content']}}</h1>
 			</a>
 		</div>
-        
+
         @endif
-        
+
         <!-- right nav bar -->
         @endforeach
 		<div class="hidden py-2 xl:col-span-3 lg:col-span-4 md:hidden lg:block">
@@ -64,15 +64,15 @@
                 <div class="flex px-1 py-4">
 					<img alt="" class="flex-shrink-0 object-cover w-20 h-20 mr-4 bg-gray-500" src={{$blog['img']}}>
 					<div class="flex flex-col flex-grow">
-						<a rel="noopener noreferrer" href="#" class="font-serif hover:underline">{{$blog['title']}}</a>
+						<a rel="noopener noreferrer" href="#" class=" hover:underline">{{$blog['title']}}</a>
 						<p class="mt-auto text-xs text-gray-600">{{$blog['published_at']}}
 							<a rel="noopener noreferrer" href="#" class="block text-blue-600 lg:ml-2 lg:inline hover:underline">{{$blog['category']}}</a>
 						</p>
 					</div>
 				</div>
                 @endif
-                	
-                @endforeach	
+
+                @endforeach
 			</div>
 		</div>
 	</div>

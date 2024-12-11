@@ -13,7 +13,7 @@
 					{{ $blog['category'] }}
 				</span>
 				<div class="flex flex-col justify-start text-center text-gray-100">
-					<span class="text-3xl font-semibold leading-none tracking-wide">{{ now()->format('l') }}</span>
+					<span class="text-xl font-semibold leading-none tracking-wide">{{ now()->format('l') }}</span>
 					<span class="leading-none uppercase">{{ now()->format('d/y') }}</span>
 				</div>
 			</div>
