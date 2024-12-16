@@ -11,7 +11,6 @@
 			</div>
 		</a>
         @endif
-        
         @endforeach
 		<div class="grid justify-center grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
         @foreach ($blogs as $blog)
@@ -25,11 +24,12 @@
 				</div>
 			</a>
         @endif
-        
+
         @endforeach
 		</div>
 		<div class="flex justify-center">
 			<button type="button" class="px-6 py-3 text-sm rounded-md hover:underline bg-gray-50 text-gray-600">Load more posts...</button>
 		</div>
 	</div>
+
 </section>

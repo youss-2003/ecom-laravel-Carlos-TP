@@ -14,8 +14,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [DataController::class,'Data']);
+Route::get('/', [DataController::class,'Data'])->name('home');
 
-Route::get('/Blog',[DataController::class,'BlogData']);
+Route::get('/Blog',[DataController::class,'BlogData'])->name('blog');
 
-Route::get('/News',[DataController::class,'NewsData']);
+Route::get('/News',[DataController::class,'NewsData'])->name('news');
+
+Route::get('/storeTickets',[DataController::class,'getstoredata'])->name('storeddata');
+
+Route::post('/stored',[DataController::class,'store'])->name('stored');
+

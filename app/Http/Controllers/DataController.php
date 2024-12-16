@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Post;
 use Illuminate\Http\Request;
 
 class DataController extends Controller
@@ -408,5 +409,20 @@ class DataController extends Controller
 
         return view('news', compact('blogs'));
     }
-}
 
+    public function store(Request $request)
+    {
+        $post = new Post();
+        $post->title= $request->title;
+        $post->author= $request->author;
+        $post->content= $request->content;
+        $post->category= $request->category;
+        $post->img= $request->img;
+        $post->poster= $request->poster;
+        $post->is_new= $request->is_new;
+        $post->save();
+    }
+    public function getstoredata(){
+        return view('store');
+    }
+}

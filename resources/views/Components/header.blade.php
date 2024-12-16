@@ -8,16 +8,16 @@
 		</a>
 		<ul class="items-stretch  space-x-3 md:flex">
 			<li class="flex">
-				<a rel="noopener noreferrer" href="/" class="flex items-center px-4  hover:text-indigo-200">Home</a>
+				<a rel="noopener noreferrer" href="{{route("home")}}" class="flex items-center px-4  hover:text-indigo-200">Home</a>
 			</li>
 			<li class="flex">
-				 <a rel="noopener noreferrer" href="/Blog" class="flex items-center px-4  hover:text-indigo-200">Blog</a>
+				 <a rel="noopener noreferrer" href="{{route("blog")}}" class="flex items-center px-4  hover:text-indigo-200">Blog</a>
 			</li>
 			<li class="flex">
-				<a rel="noopener noreferrer" href="/News" class="flex items-center px-4  hover:text-indigo-200">News</a>
+				<a rel="noopener noreferrer" href="{{route("news")}}" class="flex items-center px-4  hover:text-indigo-200">News</a>
 			</li>
 		</ul>
-        
+
 
 	</div>
 </header>
